@@ -2,7 +2,7 @@
 
 Installation:
 
-1. Download Inferno-Fire-EMS-Pager
+1. Download Inferno-Fire-EMS-Pager https://github.com/inferno-collection/Fire-EMS-Pager
 2. Download Fire-Siren-Menu
 3. Put both on your Server
 4. Configurate the Fire-EMS-Pager in the client.lua
