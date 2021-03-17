@@ -5,6 +5,8 @@ Config = {} --Don't Touch this Line
 local JobName = "fire" -- Write the Job name here
 local JobGrade = 5 -- Write the Job grade here
 
+local Command = "sirenmenu" --Write here your wanted Commmand
+
 local FirstLabel = "Siren Paleto Bay" --Write the Label of the siren here
 local FirstName = "pb" --Write here the station name from the client.lua from the inferno-fire-ems-pager script
 
@@ -41,7 +43,7 @@ Citizen.CreateThread(function()
   end
 end)
 		
-RegisterCommand('sirenmenu', function(source, args, rawCommand)
+RegisterCommand(Command, function(source, args, rawCommand)
 	PlayerData = ESX.GetPlayerData() 
 		if PlayerData.job and PlayerData.job.name == JobName then
 			if PlayerData.job and PlayerData.job.grade >= JobGrade then
